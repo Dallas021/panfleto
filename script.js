@@ -12,6 +12,10 @@ window.onload = function() {
     const textInputSemJuros = document.getElementById('text-input-semjuros')
     const textInputCor = document.getElementById('text-input-cor')
     const escreverButton = document.getElementById('btn-escrever');
+    const textOverlayAvista = document.getElementById('text-avista')
+    const textInputAvista = document.getElementById('text-input-avista')
+    const textOverlayCartao = document.getElementById('text-cartao')
+    const textInputCartao = document.getElementById('text-input-cartao')
   
     imageUpload.addEventListener('change', function(e) {
       const file = e.target.files[0];
@@ -20,16 +24,20 @@ window.onload = function() {
       reader.onload = function() {
         const image = document.getElementById('imagem');
         image.src = reader.result;
-        textOverlay.style.width = image.width + 'px'; //text-center
+        textOverlay.style.width = image.width + "100%" //text-center
         textOverlay.style.height = image.height + 'px'; //text-center
-        textOverlayProd.style.width = image.width + 'px'; //text-prod
+        textOverlayProd.style.width = image.width + "1000px" //text-prod
         textOverlayProd.style.height = image.height + 'px'; //text-prod
-        textOverlayCod.style.width = image.width + 'px'; //text-cod
+        textOverlayCod.style.width = image.width + "100%" //text-cod
         textOverlayCod.style.height = image.height + 'px'; //text-cod
-        textOverlayCor.style.width = image.width + 'px'; //text-cor
+        textOverlayCor.style.width = image.width + "100%" //text-cor
         textOverlayCor.style.height = image.height + 'px'; //text-cor
-        textOverlaySemJuros.style.width = image.width + 'px'; //text-cor
+        textOverlaySemJuros.style.width = image.width + "100%" //text-cor
         textOverlaySemJuros.style.height = image.height + 'px'; //text-cor
+        textOverlayAvista.style.width = image.width + '100%'; //text-avista
+        textOverlayAvista.style.height = image.height + 'px'; //text-avista
+        textOverlayCartao.style.width = image.width + '100%'; //text-cartao
+        textOverlayCartao.style.height = image.height + 'px'; //text-cartao
       };
   
       reader.readAsDataURL(file);
@@ -41,6 +49,8 @@ window.onload = function() {
       textOverlayCod.textContent = textInputCod.value //text-cod + text-input-cod
       textOverlayCor.textContent = textInputCor.value //text-cor + text-input-cor
       textOverlaySemJuros.textContent = textInputSemJuros.value+"X Sem Juros" //text-semjuros + text-input-semjuros
+      textOverlayAvista.textContent = textInputAvista.value //text-avista + text-input-avista
+      textOverlayCartao.textContent = textInputCartao.value //text-cartao + text-input-cartao
     });
   };
   
