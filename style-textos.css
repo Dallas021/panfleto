@@ -1,37 +1,40 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 #image-container {
     position: relative;
     display: inline-block;
   }
   #text-center {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 48%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 80px;
+    font-size: 1100%;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   #text-prod {
     position: absolute;
-    top: 27%;
-    left: 25%;
+    top: 30%;
+    left: 38%;
     width: 100%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 50px;
+    font-size: 200%;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   #text-cod {
     position: absolute;
-    top: 30%;
-    left: 23%;
+    top: 33%;
+    left: 29%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 50px;
+    font-size: 200%;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -39,23 +42,23 @@
   }
   #text-cor{
     position: absolute;
-    top: 33%;
-    left: 23%;
+    top: 36%;
+    left: 26%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 50px;
+    font-size: 200%;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   #text-semjuros {
     position: absolute;
-    top: 45%;
-    left: 23%;
+    top: 43%;
+    left: 52%;
     width: 0 auto;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 50px;
+    font-size: 600%;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
